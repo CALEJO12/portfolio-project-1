@@ -98,7 +98,7 @@ header .profile-image:hover {
 .card {
   margin: 30px;
   padding: 20px 40px 40px;
-  text-align: center center;
+  text-align: center;
   background: #fff;
   border-radius: 6px;
   transition: all .8s;
