@@ -1,6 +1,8 @@
 /* Global Layout Set-up */
 * { 
   box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
 }
   
 body {
@@ -60,14 +62,12 @@ a:hover {
   color: white
 }
 
-header {
-  text-align: center;
-  background: url('images/portland.jpg') no-repeat top center ;
-  background-size: cover;
-  overflow: hidden;
-  padding-top: 60px;
+.experience-header {
+  padding-top: 70px;
 }
-header {
+
+.profile-header {
+  padding: 30px 0px;
   line-height: 1.5;
   background-image: url(images/houston-texas-skyline.jpg);
 }
@@ -132,10 +132,20 @@ li:visited{
   color: white;
 }
 
-footer {
+.index-footer {
   width: 100%;
   min-height: 30px;
-  padding: 100px 0 40px 0px;
+  padding: 100px 0px 20px 0px;
+  font-size: 1.3em;
+}
+
+.experience-footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  min-height: 30px;
+  padding: 100px 0px 20px 0px;
+  font-size: 1.3em;
 }
 
 footer .copyright {
@@ -206,10 +216,4 @@ a.social:hover {
   main p {
     line-height: 1.6em;
   }
-
-  footer {
-    font-size: 1.3em;
-    padding-top: 70px;
-  }
-
 }
