@@ -52,6 +52,12 @@ a:hover {
     margin-right: auto;
     color: white;
 }
+
+.nav .name:hover {
+  transition: all .5s;
+  color: #0096FF;
+}
+
 .nav li {
   padding: 5px 10px 5px 10px;
 }
@@ -79,10 +85,7 @@ header .profile-image {
   border: 4px solid white;
   transition: all .5s;
 }
-header .profile-image:hover {
-  transform: scale(1.2);
-  box-shadow: 0px 0px 100px black;
-}
+
 .tag {
   background-color: #efefef;
   color: black;
@@ -132,18 +135,16 @@ li:visited{
   color: white;
 }
 
-.index-footer {
+.index-footer, .experience-footer {
   width: 100%;
   min-height: 30px;
   padding: 100px 0px 20px 0px;
   font-size: 1.3em;
 }
 
-
-
 footer .copyright {
   top: -8px;
-  font-size: .75em;
+  font-size: .90em;
 }
 
 footer ul {
@@ -160,9 +161,9 @@ a.social {
   display: inline-block;
   text-indent: -9999px;
   margin-left: 5px;
-  width: 40px;
-  height: 40px;
-  background-size: 40px 40px;
+  width: 60px;
+  height: 60px;
+  background-size: 60px 60px;
   opacity: .4;
   transition: all .5s;
 }
@@ -194,7 +195,22 @@ a.social:hover {
 .corrections-container p, .surveying-container p {
   float: right;
   clear: both;
-  padding: 10px 0px 50px 0px;
+  padding: 40px 0px 90px 0px;
+}
+
+.experience-header a:link {
+  color: blue;
+}
+
+.experience-header a:visited {
+  color: inherit;
+}
+
+.profile-image:hover {
+	-webkit-animation: wiggle .7s infinite;
+	-moz-animation: wiggle .7s infinite;
+	animation: wiggle .7s infinite;
+  box-shadow: 0px 0px 60px black;
 }
 
 /* Styles for larger screens */
@@ -228,9 +244,16 @@ a.social:hover {
   .experience-image {
     width: 80vw;
     height: auto;
+    box-shadow: black 10px 10px 30px;
   }
 
   .surveying-container p, .corrections-container p {
     font-size: 1.5em;
   }
+}
+
+@-webkit-keyframes wiggle {
+	0% {-webkit-transform:rotate(10deg);}
+	50% {-webkit-transform:rotate(-10deg);}
+	100% {-webkit-transform:rotate(10deg);}
 }
